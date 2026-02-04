@@ -17,7 +17,7 @@ app.use(
   }),
 );
 
-app.listen("3035", (req, res) => {
+app.listen(process.env.PORT || 5000, (req, res) => {
   console.log("Working at 3035");
 });
 
